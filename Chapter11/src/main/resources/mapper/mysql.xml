@@ -8,7 +8,6 @@
         select count(*) from user;
 
     </select>
-
     <insert id="addUser" parameterType="com.course.model.User">
         insert into user(id,name,age,sex)
         values(#{id},#{name},#{age},#{sex})
@@ -24,6 +23,4 @@
         delete from user where id = #{id}
 
     </delete>
-
-
 </mapper>

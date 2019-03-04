@@ -34,7 +34,7 @@ public class MyGetMethod {
     public String getWithCookies(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
         if(Objects.isNull(cookies)){
-            return "你必须携带cookies信息来";
+            return "你必须携带cookies信息来";/* + cookies.length;*/
         }
         for(Cookie cookie : cookies){
             if(cookie.getName().equals("login") &&
